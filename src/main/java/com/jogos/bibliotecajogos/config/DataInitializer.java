@@ -1,9 +1,9 @@
-package com.gvcunha.jogos.bibliotecajogos.config;
+package com.jogos.bibliotecajogos.config;
 
-import com.gvcunha.jogos.bibliotecajogos.entity.Categoria;
-import com.gvcunha.jogos.bibliotecajogos.entity.Jogo;
-import com.gvcunha.jogos.bibliotecajogos.repository.CategoriaRepository;
-import com.gvcunha.jogos.bibliotecajogos.repository.JogoRepository;
+import com.jogos.bibliotecajogos.entity.Categoria;
+import com.jogos.bibliotecajogos.entity.Jogo;
+import com.jogos.bibliotecajogos.repository.CategoriaRepository;
+import com.jogos.bibliotecajogos.repository.JogoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;

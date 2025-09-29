@@ -1,6 +1,6 @@
-package com.gvcunha.jogos.bibliotecajogos.repository;
+package com.jogos.bibliotecajogos.repository;
 
-import com.gvcunha.jogos.bibliotecajogos.entity.Categoria;
+import com.jogos.bibliotecajogos.entity.Categoria;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CategoriaRepository extends JpaRepository<Categoria, Long> {

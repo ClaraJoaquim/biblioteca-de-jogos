@@ -1,8 +1,8 @@
-package com.gvcunha.jogos.bibliotecajogos.controller;
+package com.jogos.bibliotecajogos.controller;
 
 import org.springframework.ui.Model;
-import com.gvcunha.jogos.bibliotecajogos.entity.Jogo;
-import com.gvcunha.jogos.bibliotecajogos.service.JogoService;
+import com.jogos.bibliotecajogos.entity.Jogo;
+import com.jogos.bibliotecajogos.service.JogoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

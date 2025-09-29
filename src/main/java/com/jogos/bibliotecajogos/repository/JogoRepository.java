@@ -1,6 +1,6 @@
-package com.gvcunha.jogos.bibliotecajogos.repository;
+package com.jogos.bibliotecajogos.repository;
 
-import com.gvcunha.jogos.bibliotecajogos.entity.Jogo;
+import com.jogos.bibliotecajogos.entity.Jogo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

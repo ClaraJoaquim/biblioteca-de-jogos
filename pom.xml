@@ -8,7 +8,7 @@
         <version>3.5.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.gvcunha</groupId>
+    <groupId>com</groupId>
     <artifactId>jogos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>jogos</name>

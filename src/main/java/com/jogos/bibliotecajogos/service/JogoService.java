@@ -1,7 +1,7 @@
-package com.gvcunha.jogos.bibliotecajogos.service;
+package com.jogos.bibliotecajogos.service;
 
-import com.gvcunha.jogos.bibliotecajogos.entity.Jogo;
-import com.gvcunha.jogos.bibliotecajogos.repository.JogoRepository;
+import com.jogos.bibliotecajogos.entity.Jogo;
+import com.jogos.bibliotecajogos.repository.JogoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.gvcunha.jogos.bibliotecajogos.entity;
+package com.jogos.bibliotecajogos.entity;
 
 import jakarta.persistence.Id;
 import jakarta.persistence.Entity;
