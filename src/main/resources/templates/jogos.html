@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org"
+        th:replace="~{layout :: layout (title=~{::title}, content=~{::section})}"
+>
+<head>
+    <title>Biblioteca de Jogos</title>
+</head>
+<body>
+<section>
+    <div class="mb-4">
+        <h1 class="mb-4">Listagem de Jogos</h1>
+        <a th:href="@{/jogos/novo}" class="btn btn-secondary"
+        >Adicionar Novo Jogo</a
+        >
+    </div>
+
+    <table class="table table-striped table-hover">
+        <thead class="table">
+        <tr>
+            <th>Capa</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Ano</th>
+            <th>Gênero</th>
+            <th>Finalizado</th>
+            <th class="text-center">Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="jogo : ${jogos}">
+            <td>
+                <img
+                        th:if="${jogo.urlCapa != null and !jogo.urlCapa.isEmpty()}"
+                        th:src="${jogo.urlCapa}"
+                        alt="Capa do Jogo"
+                        width="50"
+                        onerror="this.onerror=null;this.src='https://via.placeholder.com/50x75.png?text=Capa';"
+                />
+                <span th:if="${jogo.urlCapa == null or jogo.urlCapa.isEmpty()}"
+                >Sem capa</span
+                >
+            </td>
+            <td th:text="${jogo.titulo}"></td>
+            <td th:text="${jogo.autor}"></td>
+            <td th:text="${jogo.anoPublicacao}"></td>
+            <td th:text="${jogo.genero}"></td>
+            <td>
+              <span th:if="${jogo.finalizado}"
+              >Sim</span
+              >
+                <span
+                        th:unless="${jogo.finalizado}"
+
+                >Não</span
+                >
+            </td>
+            <td>
+                <a
+                        th:href="@{/jogos/editar/{id}(id=${jogo.id})}"
+                        class="btn btn-sm btn-primary me-2"
+                >Editar</a
+                >
+                <a
+                        th:href="@{/jogos/excluir/{id}(id=${jogo.id})}"
+                        class="btn btn-sm btn-danger"
+                >Excluir</a
+                >
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
